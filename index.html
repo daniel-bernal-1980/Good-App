@@ -40,65 +40,101 @@
 				<a href="additem.html" data-role="button" input type="submit">Add a Project</a>
 			</div>
 			
-			<div id="browsePrj">
-				<h4>Browse a Project Track</h4>
-				<ul data-role="listview" data-inset="true">
-					<li>
-						<img src="image/Site Development.png"/>
-						<h3>Site Development</h3>
-					</li>
-					<li>
-						<img src="image/Building Envelope.png"/>
-						<h3>Building Envelope</h3>
-					</li>
-					<li>
-						<img src="image/Interior Design.png"/>
-						<h3>Interior Design</h3>
-					</li>
-				</ul>
-			</div>
-			
-			<div id="browsePrj">
-				<h4>Browse a Project Task</h4>
-				<ul data-role="listview" data-inset="true">
-					<li>Drawings</li>
-					<li>3D Work</li>
-					<li>Renderings</li>
-				</ul>
+			<div data-role="collapsible-set">
+					
+				<div data-role="collapsible" id="browsePrj">
+					<h3>Browse a Project Track</h3>
+					<ul data-role="listview" data-inset="true">
+						<li>
+							<a href="#site">
+							<img src="image/Site Development.png"/>
+							<h3>Site Development</h3>
+							</a>
+						</li>
+						<li>
+							<a href="#bldn">
+							<img src="image/Building Envelope.png"/>
+							<h3>Building Envelope</h3>
+							</a>
+						</li>
+						<li>
+							<a href="#interior">
+							<img src="image/Interior Design.png"/>
+							<h3>Interior Design</h3>
+							</a>
+						</li>
+					</ul>
+				</div>
+				
+				<div data-role="collapsible" id="browseTsk">
+					<h4>Browse a Project Task</h4>
+					<ul data-role="listview" data-inset="true">
+						<li>
+							<img src=""/>
+							<h3>Drawings</h3>
+						</li>
+						<li>
+							<img src=""/>
+							<h3>3D Work</h3>
+						</li>
+						<li>
+							<img src=""/>
+							<h3>Renderings</h3>
+						</li>
+					</ul>
+				</div>
+				
 			</div>
 			
 		</div>
 	</div>		<!--Home page ends here-->
-
-		<!--<header id="search">
-			<input type="search" value="Search a Project" id="searchProject"/><input type="submit" value="Search" id="searchField"/>	
-		</header>
+	
+	
+	<div data-role="page" id="site">	<!--Site Development page stars here-->
+		<div data-role="header" data-position="fixed">
+			<label for="search-basic"></label>
+			<input type="search" name="search" id="searc-basic" value="Search a Project" />
+		</div>
 		
-		<div id="feature">
+		<div data-role="content">
 			<h1>Design Track</h1>
-			<p id="mess">Manage your architectural projects by tracking your design tasks with this simple app.</p>
-			<fieldset id="createProject">
-				<legend></legend>
-				<h2 id="prjTrackTl">Create a Project Track</h2>
-				<a href="additem.html" id="addProject"><input type="submit" value="Add a Project" id="addProject" class="crtPrj"/></a>
-			</fieldset>
-
-			<fieldset id="Browse">
-				<h2 id="browsePrj">Browse a Project Track</h2>
-				<ul>
-					<li><a href="#"><input type="submit" value="Site Development" id="siteDeve" class="brws"/></a></li>
-					<li><a href="#"><input type="submit" value="Building Envelope" id="bldgEnv" class="brws"/></a></li>
-					<li><a href="#"><input type="submit" value="Interior Design" id="intrDgn" class="brws"/></a></li>
-				</ul>
-				
-				<h2 id="browsePrj">Browse a Project Task</h2>
-				<ul>
-					<li><a href="#"><input type="submit" value="Drawings" id="dwg" class="brws"/></a></li>
-					<li><a href="#"><input type="submit" value="3D Work" id="trdWork" class="brws"/></a></li>
-					<li><a href="#"><input type="submit" value="Renderings" id="rndr" class="brws"/></a></li>
-				</ul>
-			</fieldset>
-		</div>-->
+			
+			<div id="trackTitle">
+				<h4>Site Development Projects</h4>
+			</div>
+	</div>		<!--Site Development page ends here-->
+	
+	
+	<div data-role="page" id="bldn">	<!--Building Envelope page stars here-->
+		<div data-role="header" data-position="fixed">
+			<label for="search-basic"></label>
+			<input type="search" name="search" id="searc-basic" value="Search a Project" />
+		</div>
+		
+		<div data-role="content">
+			<h1>Design Track</h1>
+			
+			<div id="trackTitle">
+				<h4>Building Envelope Projects</h4>
+			</div>
+	</div>		<!--Building Envelope page ends here-->
+	
+	
+	<div data-role="page" id="interior">	<!--Interior Design page stars here-->
+		<div data-role="header" data-position="fixed">
+			<label for="search-basic"></label>
+			<input type="search" name="search" id="searc-basic" value="Search a Project" />
+		</div>
+		
+		<div data-role="content">
+			<h1>Design Track</h1>
+			
+			<div id="trackTitle">
+				<h4>Interior Design Projects</h4>
+			</div>
+	</div>		<!--Interior Design page ends here-->
+	
+	
 	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
