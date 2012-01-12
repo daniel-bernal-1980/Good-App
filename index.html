@@ -18,13 +18,48 @@
 	<meta http-equiv="cleartype" content="on">
 			
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
-	<link rel="stylesheet" href="css/style.css" type="" />
+	<!--<link rel="stylesheet" href="css/style.css" type="" />-->
 	
 	<script src="js/libs/modernizr.custom.min.js"></script>
 
 </head>
 <body>
 
+	<div data-role="page" id="home">	<!--Home page stars here-->
+		<div data-role="header" data-position="fixed">
+			<label for="search-basic"></label>
+			<input type="search" name="search" id="searc-basic" value="Search a Project" />
+		</div>
+		
+		<div data-role="content">
+			<h1>Design Track</h1>
+			<p>Manage your architectural projects by tracking your design tasks with this simple app.</p>
+			
+			<div id="addProject">
+				<h4>Create a Project Track</h4>
+				<a href="additem.html" data-role="button" input type="submit">Add a Project</a>
+			</div>
+			
+			<div id="browsePrj">
+				<h4>Browse a Project Track</h4>
+				<ul data-role="listview" data-inset="true">
+					<li>Site Development</li>
+					<li>Building Envelope</li>
+					<li>Interior Design</li>
+				</ul>
+			</div>
+			
+			<div id="browsePrj">
+				<h4>Browse a Project Task</h4>
+				<ul data-role="listview" data-inset="true">
+					<li>Drawings</li>
+					<li>3D Work</li>
+					<li>Renderings</li>
+				</ul>
+			</div>
+			
+		</div>
+	</div>		<!--Home page ends here-->
 
 		<!--<header id="search">
 			<input type="search" value="Search a Project" id="searchProject"/><input type="submit" value="Search" id="searchField"/>	
@@ -55,5 +90,9 @@
 				</ul>
 			</fieldset>
 		</div>-->
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	
 </body>
 </html>
